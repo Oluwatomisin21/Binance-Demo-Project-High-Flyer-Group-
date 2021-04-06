@@ -64,7 +64,7 @@ contract HighFlyerTokenFarm{
             address recipient = staker[i];
             if(isStaking[recipient] == true){
                 uint balance = stakingBalance[recipient];
-                bep20Token.transfer(recipient, balance);
+                highFlyerToken.transfer(recipient, balance);
             }
         }
     }

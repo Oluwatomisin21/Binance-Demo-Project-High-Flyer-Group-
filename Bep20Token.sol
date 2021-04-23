@@ -1,7 +1,7 @@
 pragma solidity ^0.6.0;
 
 contract Bep20Token{
-    string  public name = "BinanceToken";                      // Set the name for display purposes
+    string  public name = "BinanceToken";                         // Set the name for display purposes
     string  public symbol = "BEP20";                             // Set the symbol for display purposes
     uint256 public totalSupply_ = 1000000000000000000000000;    
     uint8   public decimals = 18;                               

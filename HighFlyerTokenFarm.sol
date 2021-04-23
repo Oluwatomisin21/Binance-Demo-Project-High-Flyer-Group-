@@ -44,7 +44,7 @@ contract HighFlyerTokenFarm{
        
        
        //require checks if the condition is true, thows the exceptionotherwise 'trader is not owner'.
-       //if the require condition is true, then all the tokens that are staked, are unstaked .
+       //if the require condition is true, then all the tokens that are staked, are unstaked.
     function unstakeToken() public {
         require(isStaking[msg.sender] == true,"You have nothing to unstake.");
         uint balance = stakingBalance[msg.sender];

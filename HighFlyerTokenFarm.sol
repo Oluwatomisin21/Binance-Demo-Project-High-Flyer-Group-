@@ -29,7 +29,7 @@ contract HighFlyerTokenFarm{
         // this refers to the instance of the contract where the call is made (you can have multiple instances of the same contract).
         // address(this) refers to the address of the instance of the contract where the call is being made.
         // msg. sender refers to the address where the contract is being called from.
-        // @param _amount, the amount of tokens you want to stake .
+        // @param _amount, the amount of tokens you want to stake.
         bep20Token.transferFrom(msg.sender, address(this), _amount); 
         
         // The balance of the owner of the contract, after staking the coins.
